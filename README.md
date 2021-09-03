@@ -4,18 +4,16 @@
 ## 无人机视频下的行人跟踪（Person Tracking)
 VisDrone是无人机视角拍摄的数据集，针对VisDrone2019中的数据集进行提取，抽取出class为person的数据，所有序列的帧速率都是30fps。
 <div align="center">
-  <video width='800' height='600'>
-    <source id="mp4" src="./visdrone_person/VisDronePerson.mp4" type="video/mp4">
-  </videos>
+  <img src='./visdrone_person/VisDronePerson.gif' width='800'/>
 </div>
 
 ## 模型库
-### FairMOT在HT-21 Training Set上结果
+### FairMOT在VisDrone_person Training Set上结果
 |    骨干网络      |  输入尺寸 |  MOTA  |  IDF1  |  IDS  |   FP  |   FN   |   FPS   |  下载链接 | 配置文件 |
 | :--------------| :------- | :----: | :----: | :---: | :----: | :---: | :------: | :----: |:----: |
 | DLA-34         | 1088x608 |  67.2 |  70.4  |   9403  |  124840  |  255007  |     -   | [下载链接]() | [配置文件](visdrone_person/config.yml) |
 
-### FairMOT在HT-21 Test Set上结果
+### FairMOT在VisDrone_car Test Set上结果
 |    骨干网络      |  输入尺寸 |  MOTA  |  IDF1  |   IDS  |   FP   |   FN   |    FPS   |  下载链接  | 配置文件 |
 | :--------------| :------- | :----: | :----: | :----: | :----: | :----: |:-------: | :----: | :----: |
 | DLA-34         | 1088x608 |  58.2  |  61.3  |  13166   |  141872  |  197074 |    -     | [下载链接]() | [配置文件]() |
